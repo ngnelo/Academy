@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf14634681920050" configfile="/smarmeterFrontend/src/main/webapp/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="index.xhtml" x="396" y="324" id="pf14645938234860" referenceLink="//@navigationRule.0/@fromViewId|" outlinks="pf14646855155900" inlinks="pf14646855155901 pf14646855155902 pf14646855156003 pf14646855156004" path="/index.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="menu.xhtml" x="300" y="72" id="pf14645968747161" referenceLink="//@navigationRule.0/@navigationCase.0/@toViewId|" outlinks="pf14646855155901" inlinks="pf14646855155900" path="/menu.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="verbrauch.xhtml" x="84" y="312" id="pf14645977048951" outlinks="pf14646855155902" path="/verbrauch.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="preis.xhtml" x="668" y="205" id="pf14646855156005" outlinks="pf14646855156004" path="/preis.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="preisChart.xhtml" x="504" y="96" id="pf14646855156006" outlinks="pf14646855156003" path="/preisChart.xhtml"/>
+  <links id="pf14646855155900" target="pf14645968747161" source="pf14645938234860" outcome="#{loginBean.validateUsernamePassword}"/>
+  <links id="pf14646855155901" target="pf14645938234860" source="pf14645968747161" outcome="#{loginBean.logout}"/>
+  <links id="pf14646855155902" target="pf14645938234860" source="pf14645977048951" outcome="#{loginBean.logout}"/>
+  <links id="pf14646855156003" target="pf14645938234860" source="pf14646855156006" outcome="#{loginBean.logout}"/>
+  <links id="pf14646855156004" target="pf14645938234860" source="pf14646855156005" outcome="#{loginBean.logout}"/>
+</pageflow:Pageflow>

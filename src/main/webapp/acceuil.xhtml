@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html">
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<h:outputStylesheet library="css" name="style.css" />
+	<title>X_Academy</title>
+</h:head>
+
+<h:body>
+
+	<ul class="topnav">
+		<li><h:link class="active" value="Menu"/></li>
+		<li><h:link outcome="index" value="Accueil" /></li>
+		<li><h:link outcome="preparation" value="Préparations" /></li>
+		<li><h:link outcome="nouvelles" value="News" /></li>
+		<li><h:link outcome="contact" value="Contact" /></li>
+		<li><h:link outcome="enregistrement" value="Enregistrement" /></li>
+		<li><h:link outcome="apropos" value="A propos de nous" /></li>
+		<li class="icon"><a href="javascript:void(0);"
+			style="font-size: 15px;" onclick="myFunction()">☰</a></li>
+	</ul>
+	<div class="info">
+	<h1>Bienvenu sur le site de l'excellence</h1>
+
+	<div class="red">logo</div>
+		<h2>Responsive Example</h2>
+		<p>
+			Académie spécialisée dans l'orientation socio-professionnelle, la
+			préparation aux examens nationaux et la préparation aux concours
+			nationaux et internationaux. X-Academy lance cette année 2016 à
+			douala la première session des préparations aux concours 2nd Cycle
+			Ingénieur. <br /> Nous sommes une organisation composée d?élèves et
+			d'experts: <br />
+		</p>
+		<ul>
+			<li>Enseignemants et élèves-enseignants : ENS, ENSET</li>
+			<li>Ingénieur et élèves-ingènieurs : POLYTECH, ENSAI, FGI, ISS,
+				IAI, ASECNA</li>
+			<li>Economiste, comptable et commerciaux: ESSEC, ISSEA</li>
+			<li>Fondamentaliste : Ecole Doctorale, Faculté des Sciences</li>
+			<li>Conseiller : Doyens des facultés, Directeur des ecoles, chef
+				de départements, chef déntreprises, cadres d'entreprises.</li>
+		</ul>
+
+	</div>
+	<script>
+		function myFunction() {
+			document.getElementsByClassName("topnav")[0].classList
+					.toggle("responsive");
+		}
+	</script>
+</h:body>
+
+</html>

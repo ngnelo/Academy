@@ -1,0 +1,126 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui"
+	template="/templates/default/main.xhtml">
+	<ui:define name="content">
+		<!-- <h1 class="page-header "> <i class="fa fa-tachometer"></i> Dashboard</h1> -->
+		<div class="info">
+			<h1>Bienvenu sur le site de l'excellence Académique</h1>
+			///////////////////////
+			<div class="defilement" style="width: 1200px; height: 400px;">
+				<div id="carousel-example-generic" class="carousel slide"
+					data-ride="carousel">
+					<!-- Indicators -->
+					<ol class="carousel-indicators">
+						<li data-target="#carousel-example-generic" data-slide-to="0"
+							class="active"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+					</ol>
+
+					<!-- Wrapper for slides -->
+					<div class="carousel-inner">
+						<div class="item active">
+							<!-- <img src="resources/images/logo.png" alt="..." /> -->
+							<img src="resources/images/logo.png"
+								alt="X-Academy logo" />
+							<!-- <div class="carousel-caption">
+							<h3>Caption Text</h3>
+						</div> -->
+							<div class="container">
+								<div class="carousel-caption">
+									<h1>Percentage-based sizing</h1>
+									<p>With "mobile-first" there is now only one
+										percentage-based grid.</p>
+									<p>
+										<a class="btn btn-large btn-primary" href="#">learn more</a>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<h:graphicImage value="resources/images/x-academy.jpg" alt="..." />
+							<!-- <div class="carousel-caption">
+							<h3>Caption Text</h3>
+						</div> -->
+							<div class="container">
+								<div class="carousel-caption">
+									<h1>Percentage-based sizing</h1>
+									<p>With "mobile-first" there is now only one
+										percentage-based grid.</p>
+									<p>
+										<a class="btn btn-large btn-primary" href="#">learn more</a>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<h:graphicImage value="http://placehold.it/1200x315" alt="..." />
+							<div class="carousel-caption">
+								<h3>Caption Text</h3>
+								<p>With "mobile-first" there is now only one
+									percentage-based grid.</p>
+								<p>
+									<a class="btn btn-large btn-primary" href="#">learn more</a>
+								</p>
+							</div>
+							<!-- <div class="container">
+								<div class="carousel-caption">
+									<h1>Percentage-based sizing</h1>
+									<p>With "mobile-first" there is now only one
+										percentage-based grid.</p>
+									<p>
+										<a class="btn btn-large btn-primary" href="#">learn more</a>
+									</p>
+								</div>
+							</div> -->
+						</div>
+					</div>
+
+					<!-- Controls -->
+					<a class="left carousel-control" href="#carousel-example-generic"
+						role="button" data-slide="prev"> <span
+						class="glyphicon glyphicon-chevron-left"></span>
+					</a> <a class="right carousel-control" href="#carousel-example-generic"
+						role="button" data-slide="next"> <span
+						class="glyphicon glyphicon-chevron-right"></span>
+					</a>
+				</div>
+				<!-- Carousel -->
+
+				<script
+					src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+				<script src="js/bootstrap.min.js"></script>
+			</div>
+			s ///////////////////////
+
+			<h:form>
+				<h:commandLink action="index">
+					<h:graphicImage value="resources/images/logo.png"
+						alt="X-Academy logo" style="width: 304px; height: 228px;" />
+				</h:commandLink>
+			</h:form>
+			<!-- <img src="resources/images/logo.png" alt="X-Academy logo" style="width:304px;height:228px;"/> -->
+			<h2>Qui sommes nous???</h2>
+			<p>
+				Académie spécialisée dans l'orientation socio-professionnelle, la
+				préparation aux examens nationaux et la préparation aux concours
+				nationaux et internationaux. X-Academy lance cette année 2016 à
+				douala la première session des préparations aux concours 2nd Cycle
+				Ingénieur. <br /> Nous sommes une organisation composée d?élèves et
+				d'experts: <br />
+			</p>
+			<ul>
+				<li>Enseignemants et élèves-enseignants : ENS, ENSET</li>
+				<li>Ingénieur et élèves-ingènieurs : POLYTECH, ENSAI, FGI, ISS,
+					IAI, ASECNA</li>
+				<li>Economiste, comptable et commerciaux: ESSEC, ISSEA</li>
+				<li>Fondamentaliste : Ecole Doctorale, Faculté des Sciences</li>
+				<li>Conseiller : Doyens des facultés, Directeur des ecoles,
+					chef de départements, chef déntreprises, cadres d'entreprises.</li>
+			</ul>
+		</div>
+	</ui:define>
+</ui:composition>
